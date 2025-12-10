@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+
+    /* New Medical Blue theme palette */
+    /* Primary: Medical Blue (#2D9CDB), Secondary: Teal (#1ABC9C) */
+    /* Background: White (#FFFFFF), Surface: Light Gray (#F7F9FA) */
+    /* Text: Dark Charcoal (#333333), Accent: Soft Blue (#E7F3FF) */
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 200 20% 98%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 201 69% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 168 76% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 210 100% 95%;
+    --accent-foreground: 201 69% 35%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 201 69% 52%;
+    --radius: 0.5rem;
+
+    /* Updated chart colors to match new theme */
+    --chart-1: 201 69% 52%;
+    --chart-2: 168 76% 42%;
+    --chart-3: 201 69% 40%;
+    --chart-4: 168 76% 55%;
+    --chart-5: 210 60% 65%;
+
+    /* Updated sidebar colors */
+    --sidebar-background: 200 20% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 201 69% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 100% 95%;
+    --sidebar-accent-foreground: 201 69% 35%;
+    --sidebar-border: 200 20% 90%;
+    --sidebar-ring: 201 69% 52%;
+
+    /* Updated medical theme scale - Medical Blue */
+    --medical-50: 210 100% 97%;
+    --medical-100: 210 100% 95%;
+    --medical-200: 205 85% 85%;
+    --medical-300: 203 80% 70%;
+    --medical-400: 202 75% 60%;
+    --medical-500: 201 69% 52%;
+    --medical-600: 201 70% 45%;
+    --medical-700: 201 72% 38%;
+    --medical-800: 201 75% 30%;
+    --medical-900: 201 78% 22%;
+    --medical-950: 201 80% 15%;
+  }
+
+  .dark {
+    /* Updated dark mode with Medical Blue theme */
+    --background: 210 25% 8%;
+    --foreground: 210 15% 95%;
+    --card: 210 20% 12%;
+    --card-foreground: 210 15% 95%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 15% 95%;
+    --primary: 201 69% 55%;
+    --primary-foreground: 210 25% 8%;
+    --secondary: 168 76% 45%;
+    --secondary-foreground: 210 25% 8%;
+    --muted: 210 15% 18%;
+    --muted-foreground: 210 10% 60%;
+    --accent: 201 50% 20%;
+    --accent-foreground: 201 69% 70%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 201 69% 55%;
+
+    /* Updated dark mode chart colors */
+    --chart-1: 201 69% 55%;
+    --chart-2: 168 76% 50%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Updated dark mode sidebar colors */
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 210 15% 90%;
+    --sidebar-primary: 201 69% 55%;
+    --sidebar-primary-foreground: 210 25% 8%;
+    --sidebar-accent: 201 50% 18%;
+    --sidebar-accent-foreground: 201 69% 70%;
+    --sidebar-border: 210 20% 18%;
+    --sidebar-ring: 201 69% 55%;
+
+    /* Updated dark mode medical scale */
+    --medical-50: 201 80% 15%;
+    --medical-100: 201 78% 22%;
+    --medical-200: 201 75% 30%;
+    --medical-300: 201 72% 38%;
+    --medical-400: 201 70% 45%;
+    --medical-500: 201 69% 55%;
+    --medical-600: 202 75% 60%;
+    --medical-700: 203 80% 70%;
+    --medical-800: 205 85% 85%;
+    --medical-900: 210 100% 95%;
+    --medical-950: 210 100% 97%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
